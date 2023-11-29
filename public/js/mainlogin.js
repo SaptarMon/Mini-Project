@@ -95,22 +95,12 @@ console.log(bodyData);
       if(data.role=="user"){
 
         location.href="./userDashboard.html"
-      }
-
-     
-      
+      } 
     })
     .catch((error) => {
       console.log(error);
     });
 
   event.preventDefault();
-
-
-
-
-
-
-
 
 }

@@ -1,12 +1,6 @@
 const Task = require('../model/adminPageModel');
 const Users = require('../model/Users');
 
-/**
- * 
- * @param {*} req 
- * @param {*} res 
- */
-
 // Controller to handle fetching all tasks
 exports.getAllTasksUpdate = (req, res) => {
   const id = req.params.id;
