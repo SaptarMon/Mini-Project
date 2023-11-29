@@ -1,0 +1,49 @@
+.page-wrapper {
+    background-color: #f8f9fa;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card-5 {
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px 80px;
+    width: 400px;
+}
+
+.input--style-5 {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.btn--radius-2 {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.btn--radius-2:hover {
+    background-color: #0056b3;
+}
+
+.card-heading {
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    margin-top: 20px;
+}

@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    cursor: pointer;
+}
+
+#taskTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#taskTable th, #taskTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#taskTable th {
+    background-color: #f2f2f2;
+}
+
+#notificationPopup {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+#notificationTitle {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#notificationMessage {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#closeNotificationBtn {
+    margin-top: 10px;
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+#closeNotificationBtn:hover {
+    color: #0056b3;
+}

@@ -1,0 +1,167 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+#adminDashboardHeading {
+  text-align: center;
+  font-size: px;
+  margin-bottom: 20px;
+}
+
+/* Sidebar styles */
+nav {
+  background-color: lightskyblue;
+  padding: 10px;
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #45a049;
+}
+
+/* Main content styles */
+main {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+/* Task Table styles */
+#taskTable {
+  /* width: calc(100%-220px); */
+  margin: 20px 20px 20px 300px;
+  /* padding-left: 30%; */
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* width: 40px; */
+}
+
+#taskTable th,
+#taskTable td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  /* width: 50px; */
+}
+
+#taskTable th {
+  background-color: whitesmoke;
+  color: black;
+  width: 50px;
+}
+
+/* Create Task Form styles */
+#createTaskForm {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: lightcyan;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  width: calc(100% - 10px);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Navigation link styles */
+nav a, #createTaskLink, #currentTaskLink, #completedTaskLink, #searchTaskLink {
+  cursor: pointer;
+  color: black;
+  background-color: whitesmoke;
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+nav a:hover, #createTaskLink:hover, #currentTaskLink:hover, #completedTaskLink:hover, #searchTaskLink:hover {
+  background-color: #ddd;
+}
+
+/* Search form styles */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/* Logout button styles */
+#logoutBtn {
+  padding: 10px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  transition: background-color 0.3s;
+}
+
+#logoutBtn:hover {
+  background-color: darkred;
+}
+
+#searchInput, #searchButton {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+#editTaskForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 10px;
+  margin-left: 20%;
+}

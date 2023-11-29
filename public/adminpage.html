@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager Admin Page</title>
+  <link rel="stylesheet" href="adminpage.css">
+</head>
+
+<body>
+  <h1 id="adminDashboardHeading">Admin Dashboard</h1>
+  <!-- Navigation bar -->
+  <nav>
+    <a id="createTaskLink">Create Task</a>
+    <a id="Alltask">All Tasks</a>
+    <a id="currentTaskLink">Current Tasks</a>
+    <a id="completedTaskLink">Completed Tasks</a>
+    <input type="text" id="searchInput"  placeholder="Search...">
+    <button type="button" id="searchButton">Search</button>
+    <button id="logoutBtn">Logout</button>
+  </nav>
+
+  <!-- Task table -->
+  <table id="taskTable">
+    <!-- Table headers -->
+    <tr>
+      <th>Task ID   </th>
+      
+      <th>Task Title</th>
+      <th>Task Description</th>
+      <!-- <th>Due Date</th> -->
+      <th>Priority Level</th>
+      <th>Assigned to User</th>
+      <th>Status</th>
+      <th>Messages</th>
+      <th>Actions</th>
+    </tr>
+    <!-- Table data will be added dynamically using JavaScript -->
+  </table>
+
+  <!-- Create Task Form Popup -->
+  <div id="createTaskForm">
+    <form id="taskForm">
+      <label for="Task_Title">Task Title:</label>
+      <input type="text" id="Task_Title" name="Task_Title" required>
+
+      <label for="TASK_DESCRIPTION">Task Description:</label>
+      <input type="text" id="TASK_DESCRIPTION" name="TASK_DESCRIPTION" required>
+
+      <!-- <label for="DUE_DATE">Due Date:</label> -->
+      <!-- <input type="date" id="DUE_DATE" name="DUE_DATE" required> -->
+
+      <label for="PRIORITY_LEVEL">Priority Level:</label>
+      <select id="PRIORITY_LEVEL" name="PRIORITY_LEVEL" required>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+
+      <label for="ASSIGNED_TO_USER">Assigned to User:</label>
+      <div id="ASSIGNED_TO_USER">
+      </div>
+      <button type="button" id="createTaskFormSubmit">Submit</button>
+      <button type="button" id="createTaskFormCancel">Cancel</button>
+    </form>
+  </div>
+
+  <!-- New Edit Task Form Popup -->
+  <div id="editTaskForm" class="add-form" style="display: none;">
+    <h2>Edit Task</h2>
+
+    <input type="hidden" id="editTaskId">
+
+    <input type="text" id="editTaskTitle" placeholder="Task Title" required>
+    <input type="text" id="editTaskDescription" placeholder="Task Description" required>
+    <!-- <input type="date" id="editTaskDueDate" placeholder="Due Date" required> -->
+    <select id="editTaskPriority" required>
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+    <input type="text" id="editTaskAssignedTo" placeholder="Assigned To" required>
+
+    <button id="update1" onclick="updateTask()">Update</button>
+    <button id="cancel1" onclick="cancelUpdateTask()">Cancel</button>
+  </div>
+
+
+
+  <script src="./adminpage.js"></script>
+
+</body>
+
+</html>
